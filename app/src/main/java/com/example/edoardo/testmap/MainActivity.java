@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final EditText indTxt = (EditText)findViewById(R.id.indirizzoText);
-        indTxt.setText("via pascucci albinia");
+        indTxt.setText("Via Pascucci 40 Albinia");
 
         Button b = (Button) findViewById(R.id.findLocButton);
         b.setOnClickListener(new View.OnClickListener() {

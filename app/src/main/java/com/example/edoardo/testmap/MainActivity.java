@@ -110,12 +110,12 @@ public class MainActivity extends AppCompatActivity {
         if(extr.containsKey(Intent.EXTRA_TEXT)){
             str=extr.getString(Intent.EXTRA_TEXT);
 
-            int toRemove=str.indexOf("https");
+            int toRemove=str.indexOf("https")-1;
             String sToRemove="";
             for (int i=toRemove;i<str.length();i++){
                 sToRemove+=str.charAt(i);
             }
-            str=str.replace(sToRemove," ");
+            str=str.replace(sToRemove,"");
 
             EditText indTxt = (EditText)findViewById(R.id.indirizzoText);
             indTxt.setText(str);
